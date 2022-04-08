@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Our products</h1>
+    <div class="card" *ngFor="let accessory of accessories" [style.background-image]="'url(' + accessory.img + ')'">
+        <a routerLink={{accessory.link}} class="card-link"></a>
+        <span class="card-title">{{accessory.name}}</span>
+        <span class="card-price">{{accessory.price}}</span>
+    </div>
+</div>

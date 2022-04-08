@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card" *ngFor="let catalog of catalogs" [style.background-image]="'url(' + catalog.img + ')'">
+        <a routerLink={{catalog.link}} class="card-link"></a>
+        <span class="span_title">{{catalog.name}}</span>
+    </div>
+</div>
+<main>
+    <router-outlet></router-outlet>
+</main>
